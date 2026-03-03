@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="All projects by Aaryan — full-stack apps, frontend experiments, backend practice." />
+<meta property="og:title" content="Projects — Aaryan" />
+<meta property="og:description" content="Full-stack developer from Haryana. Node.js, MongoDB, React and more." />
+<meta property="og:image" content="previews/wanderlust.png" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#050508" />
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — Aaryan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<nav>
+  <a href="index.html" class="nav-logo">Aaryan.</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#projects" class="nav-active">Projects</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+<div class="nav-overlay" id="navOverlay">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="index.html#about" onclick="closeMenu()">About</a>
+  <a href="index.html#skills" onclick="closeMenu()">Skills</a>
+  <a href="index.html#experience" onclick="closeMenu()">Experience</a>
+  <a href="index.html#projects" onclick="closeMenu()">Projects</a>
+  <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+  <div class="overlay-footer">Aaryan — Portfolio</div>
+</div>
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <div class="page-eyebrow">All Work</div>
+    <h1 class="page-title">All <em>Projects</em></h1>
+    <p class="page-sub">Everything I have built — ordered by complexity and skill progression.</p>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="live">Live</button>
+      <button class="filter-btn" data-filter="in-progress">In Progress</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+  </div>
+</div>
+<div class="page-wrap">
+  <div class="sec-label reveal">Featured Projects</div>
+  <div class="featured-grid">
+
+    <div class="feat-card reveal" data-status="in-progress">
+      <div class="feat-img">
+        <img src="previews/wanderlust.png" alt="Wanderlust" />
+        <div class="feat-img-fade"></div>
+        <span class="s-badge wip">In Progress</span>
+        <div class="feat-ghost">01</div>
+      </div>
+      <div class="feat-body">
+        <div class="feat-meta">Full-Stack Web App</div>
+        <div class="feat-title">Wanderlust</div>
+        <p class="feat-desc">Full-stack travel listing platform — authentication, authorization, cloud image storage, and MVC architecture end-to-end.</p>
+        <div class="tags">
+          <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span>
+          <span class="tag">Mongoose</span><span class="tag">EJS</span><span class="tag">REST API</span>
+          <span class="tag">MVC</span><span class="tag">Cloudinary</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/ryan-4u/WanderLust" target="_blank" class="lbtn">GitHub</a>
+          <span class="lbtn-off">Live — Soon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-card reveal reveal-delay-1" data-status="in-progress">
+      <div class="feat-img">
+        <img src="previews/battlearena.webp" alt="BattleArena" />
+        <div class="feat-img-fade"></div>
+        <span class="s-badge wip">In Progress</span>
+        <div class="feat-ghost">02</div>
+      </div>
+      <div class="feat-body">
+        <div class="feat-meta">Full-Stack Web App</div>
+        <div class="feat-title">BattleArena</div>
+        <p class="feat-desc">Platform to organise esports tournaments and battle events — event management, dynamic templating, full Express backend.</p>
+        <div class="tags">
+          <span class="tag">Node.js</span><span class="tag">Express.js</span>
+          <span class="tag">EJS</span><span class="tag">JavaScript</span><span class="tag">CSS</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/ryan-4u/BattleArena" target="_blank" class="lbtn">GitHub</a>
+          <span class="lbtn-off">Live — Soon</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="sec-label reveal" style="margin-top:4rem;">All Projects</div>
+  <div class="proj-list">
+
+    <div class="proj-row reveal" data-status="in-progress">
+      <div class="row-num">03</div>
+      <div class="row-main">
+        <div class="row-title">Real-Time Tracker</div>
+        <div class="row-desc">Real-time user location tracker on an interactive map using Socket.io and Leaflet.js.</div>
+      </div>
+      <div class="row-tags"><span class="tag">Node.js</span><span class="tag">Socket.io</span><span class="tag">Leaflet.js</span><span class="tag">Express</span></div>
+      <div class="row-right">
+        <span class="s-badge wip">In Progress</span>
+        <a href="https://github.com/ryan-4u/Real-Time-Tracker" target="_blank" class="lbtn">GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-row reveal reveal-delay-1" data-status="live">
+      <div class="row-num">04</div>
+      <div class="row-main">
+        <div class="row-title">Zentry — Gaming Website</div>
+        <div class="row-desc">Modern gaming landing page with advanced UI animations and responsive layouts.</div>
+      </div>
+      <div class="row-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div>
+      <div class="row-right">
+        <span class="s-badge done">Live</span>
+        <a href="https://github.com/ryan-4u/Zentry-Gaming-Website" target="_blank" class="lbtn">GitHub</a>
+        <a href="https://zentry-2022.netlify.app/" target="_blank" class="lbtn">Live</a>
+      </div>
+    </div>
+
+    <div class="proj-row reveal reveal-delay-2" data-status="live">
+      <div class="row-num">05</div>
+      <div class="row-main">
+        <div class="row-title">3D Landing Page</div>
+        <div class="row-desc">Interactive landing page with scroll-reveal animations and embedded Spline 3D elements.</div>
+      </div>
+      <div class="row-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">AOS</span><span class="tag">Spline</span></div>
+      <div class="row-right">
+        <span class="s-badge done">Live</span>
+        <a href="https://github.com/ryan-4u/3D_elemen" target="_blank" class="lbtn">GitHub</a>
+        <a href="https://3d-element-page.netlify.app/" target="_blank" class="lbtn">Live</a>
+      </div>
+    </div>
+
+    <div class="proj-row reveal reveal-delay-3" data-status="in-progress">
+      <div class="row-num">06</div>
+      <div class="row-main">
+        <div class="row-title">REST API Backend</div>
+        <div class="row-desc">Backend REST API with full CRUD endpoints — architecture practice and RESTful convention exploration.</div>
+      </div>
+      <div class="row-tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST API</span></div>
+      <div class="row-right">
+        <span class="s-badge wip">In Progress</span>
+        <a href="https://github.com/ryan-4u/Web-Dev/tree/main/Backend/REST" target="_blank" class="lbtn">GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-row reveal reveal-delay-4" data-status="completed">
+      <div class="row-num">07</div>
+      <div class="row-main">
+        <div class="row-title">Simon Says Game</div>
+        <div class="row-desc">Classic memory-sequence game with increasing difficulty. Pure vanilla JS DOM manipulation.</div>
+      </div>
+      <div class="row-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <div class="row-right">
+        <span class="s-badge comp">Completed</span>
+        <a href="https://github.com/ryan-4u/Web-Dev/tree/main/Mini_Projects/Simon%20Says%20Game" target="_blank" class="lbtn">GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-row reveal reveal-delay-5" data-status="completed">
+      <div class="row-num">08</div>
+      <div class="row-main">
+        <div class="row-title">To Do App</div>
+        <div class="row-desc">Task manager — add, complete, remove items. Clean vanilla JS practice project.</div>
+      </div>
+      <div class="row-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      <div class="row-right">
+        <span class="s-badge comp">Completed</span>
+        <a href="https://github.com/ryan-4u/Web-Dev/tree/main/Mini_Projects/To%20Do%20App" target="_blank" class="lbtn">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="back-wrap reveal">
+  <a href="index.html" class="back-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="19 12 5 12"/><polyline points="11 6 5 12 11 18"/></svg>
+    Back to Portfolio
+  </a>
+</div>
+</div>
+<footer class="page-footer">
+  <span>2026 Aaryan</span><span>Built with precision.</span>
+</footer>
+<script src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aaryan — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Aaryan.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>   
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<button class="hamburger" id="hamburger" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="nav-overlay" id="navOverlay">
+  <a href="#hero"     onclick="closeMenu()">Home</a>
+  <a href="#about"    onclick="closeMenu()">About</a>
+  <a href="#skills"   onclick="closeMenu()">Skills</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#contact"  onclick="closeMenu()">Contact</a>
+  <div class="nav-overlay-footer">Aaryan — Portfolio</div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Hello, I'm</div>
+    <h1 class="hero-name">Aaryan<span>.</span></h1>
+    <div class="hero-title-wrapper">
+      <div class="hero-title-inner">
+        <span>Full-Stack Developer</span>
+        <span>Frontend Engineer</span>
+        <span>Software Engineer</span>
+      </div>
+    </div>
+    <p class="hero-desc">
+    I don't just write code — I build things that work, scale, and matter.
+    </p>
+    <div class="hero-ctas">
+      <a href="projects.html" class="btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="5 12 19 12"/><polyline points="13 6 19 12 13 18"/></svg>
+        View Projects
+      </a>
+      <a href="resume.pdf" download class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Hire Me
+      </a>
+    </div>
+  </div>
+
+  <!-- Terminal — right side of hero -->
+  <div class="hero-terminal-wrap">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <span class="terminal-title">aaryan.js</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span class="scroll-line"></span>
+    Scroll
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-label reveal">About Me</div>
+  <h2 class="section-title reveal reveal-delay-1">Who I <em>Am</em></h2>
+  <div class="about-grid">
+    <div class="about-text reveal reveal-delay-2">
+      <p>I'm <strong>Aaryan</strong>, a <span class="gold">self-driven developer</span> from Haryana, India — 19 months in, full-stack capable, and still accelerating.</p>
+      <p>While most people my age are still in theory, I've been building — full-stack web apps with <strong>Node.js, MongoDB, and React</strong>, systems work in <strong>C/C++</strong>, and a solid grip on CS fundamentals like OS, DBMS, OOPS, CN, and COA. <span class="gold">My skills weren't handed to me by a curriculum.</span> I built them project by project.</p>
+      <p>Currently levelling up in React, Tailwind, and intermediate DSA — targeting a <span class="gold">full-time role at a high-impact company</span> where I can ship real work from day one. Also open to internships that treat me like an engineer, not a student.</p>
+    </div>
+    <div class="about-stats reveal reveal-delay-3">
+        <div class="stat-card">
+        <div class="stat-number"></div>
+        <div class="stat-label">Months of Building</div>
+        </div>
+        <div class="stat-card">
+        <div class="stat-number"></div>
+        <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+        <div class="stat-number"></div>
+        <div class="stat-label">Technologies Known</div>
+        </div>
+        <div class="stat-card">
+        <div class="stat-number"></div>
+        <div class="stat-label">Drive to Improve</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-label reveal">Technical Stack</div>
+  <h2 class="section-title reveal reveal-delay-1">What I <em>Work With</em></h2>
+  <div class="skills-grid">
+    <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">C++</span>
+        <span class="skill-tag core">JavaScript</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        </div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">React</span>
+        <span class="skill-tag core">Tailwind CSS</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">EJS</span>
+        </div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">Node.js</span>
+        <span class="skill-tag core">Express.js</span>
+        <span class="skill-tag core">REST APIs</span>
+        <span class="skill-tag">MVC</span>
+        <span class="skill-tag">Cloudinary</span>
+        </div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-4">
+        <div class="skill-group-title">Databases</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">MongoDB</span>
+        <span class="skill-tag core">Mongoose</span>
+        <span class="skill-tag">SQL</span>
+        </div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-title">CS Fundamentals</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">DSA</span>
+        <span class="skill-tag">OS</span>
+        <span class="skill-tag">DBMS</span>
+        <span class="skill-tag">CN</span>
+        <!-- <span class="skill-tag">Digital Electronics</span> -->
+        <span class="skill-tag">Cloud Computing</span>
+        </div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-title">Tools</div>
+        <div class="skill-tags">
+        <span class="skill-tag core">Git</span>
+        <span class="skill-tag core">GitHub</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Terminal</span>
+        </div>
+    </div>
+    </div>
+  
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="section-label reveal">Journey</div>
+  <h2 class="section-title reveal reveal-delay-1">Experience & <em>Credentials</em></h2>
+
+  <div class="timeline">
+
+    <!-- Internship -->
+    <div class="timeline-item reveal">
+      <div class="timeline-dot">
+        <div class="timeline-dot-inner"></div>
+      </div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Full Stack Developer Intern</div>
+            <div class="timeline-company">CodeAlpha</div>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-badge current">Current</span>
+            <span class="timeline-date">Mar 2026 — Apr 2026</span>
+            <span class="timeline-type">Remote · 1 Month</span>
+          </div>
+        </div>
+        <p class="timeline-desc">
+          Working as a Full Stack Developer intern — building and shipping real features using modern web technologies. Gaining hands-on experience in a professional remote environment.
+        </p>
+        <div class="timeline-tags">
+          <span class="tl-tag">Full Stack</span>
+          <span class="tl-tag">Remote</span>
+          <span class="tl-tag">Node.js</span>
+          <span class="tl-tag">MongoDB</span>
+        </div>
+        <!-- Offer Letter -->
+        <div class="cert-gallery">
+        <div class="cert-gallery-label">Documents</div>
+        <div class="cert-thumbs">
+            <div class="cert-thumb">
+            <img src="certificates/codealpha-offer.jpeg" alt="Offer Letter" />
+            <span>Offer Letter</span>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training -->
+    <div class="timeline-item reveal reveal-delay-1">
+    <div class="timeline-dot">
+        <div class="timeline-dot-inner"></div>
+    </div>
+    <div class="timeline-card">
+        <div class="timeline-header">
+        <div>
+            <div class="timeline-role">AI/ML with Python — Industrial Training</div>
+            <div class="timeline-company">Future Finders, Mohali</div>
+        </div>
+        <div class="timeline-meta">
+            <span class="timeline-date">Jun 2024 — Jul 2024</span>
+            <span class="timeline-type">Offline · 45 Days</span>
+        </div>
+        </div>
+        <p class="timeline-desc">
+        Completed a 45-day offline industrial training focused on AI/ML with Python — covering data analysis, visualization, and foundational ML concepts. Awarded certificates of Training, Completion, and Personal Development.
+        </p>
+        <div class="timeline-tags">
+        <span class="tl-tag">Python</span>
+        <span class="tl-tag">Machine Learning</span>
+        <span class="tl-tag">NumPy</span>
+        <span class="tl-tag">Pandas</span>
+        <span class="tl-tag">Matplotlib</span>
+        </div>
+
+        <!-- Certificate thumbnails -->
+        <div class="cert-gallery">
+        <div class="cert-gallery-label">Certificates</div>
+        <div class="cert-thumbs">
+            <div class="cert-thumb" >
+            <img src="certificates/ff-training.jpeg" alt="Certificate of Training" />
+            <span>Training</span>
+            </div>
+            <div class="cert-thumb" >
+            <img src="certificates/ff-completion.jpeg" alt="Certificate of Completion" />
+            <span>Completion</span>
+            </div>
+            <div class="cert-thumb" >
+            <img src="certificates/ff-personal-dev.jpeg" alt="Certificate of Personal Development" />
+            <span>Personal Dev</span>
+            </div>
+            <div class="cert-thumb" >
+            <img src="certificates/ff-concern.jpeg" alt="To Whom It May Concern" />
+            <span>Concern</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Course -->
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="timeline-dot">
+        <div class="timeline-dot-inner"></div>
+      </div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Full Stack Web Development</div>
+            <div class="timeline-company">Apna College — Shradha Khapra</div>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-badge ongoing">Ongoing</span>
+            <span class="timeline-date">Jan 2025 — Present</span>
+            <span class="timeline-type">Online Course</span>
+          </div>
+        </div>
+        <p class="timeline-desc">
+          Comprehensive full-stack web development course covering HTML, CSS, JavaScript, Node.js, Express, MongoDB, and now React and Tailwind CSS. Completing the final modules while building projects alongside.
+        </p>
+        <div class="timeline-tags">
+          <span class="tl-tag">HTML/CSS</span>
+          <span class="tl-tag">JavaScript</span>
+          <span class="tl-tag">Node.js</span>
+          <span class="tl-tag">React</span>
+          <span class="tl-tag">Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-label reveal">Work</div>
+  <h2 class="section-title reveal reveal-delay-1">Selected <em>Projects</em></h2>
+
+  <!-- Featured Banner — Wanderlust -->
+  <div class="project-banner reveal">
+    <div class="project-banner-bg">
+      <img src="previews/wanderlust.png" alt="Wanderlust" />
+      <div class="project-banner-overlay"></div>
+    </div>
+    <div class="project-banner-content">
+      <div class="project-banner-left">
+        <div class="project-eyebrow">
+          <span class="project-num-tag">01 — Featured</span>
+          <span class="project-status-badge wip">In Progress</span>
+        </div>
+        <div class="project-banner-title">Wanderlust</div>
+        <p class="project-banner-desc">
+          Full-stack travel listing platform where users can create, edit, and manage property listings — with authentication, authorization, and cloud image storage. Built with MVC architecture end to end.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Express.js</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">Mongoose</span>
+          <span class="project-tag">EJS</span>
+          <span class="project-tag">REST API</span>
+          <span class="project-tag">MVC</span>
+          <span class="project-tag">Cloudinary</span>
+        </div>
+      </div>
+      <div class="project-banner-right">
+        <a href="https://github.com/ryan-4u/WanderLust" target="_blank" class="link-btn">
+          GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <span class="link-btn-disabled">Live — Soon</span>
+      </div>
+    </div>
+    <!-- Large ghost number -->
+    <div class="project-ghost-num">01</div>
+  </div>
+
+  <!-- Grid — Zentry + 3D Landing + Explore -->
+  <div class="projects-grid">
+
+    <div class="project-grid-card reveal reveal-delay-1">
+      <div class="project-grid-img">
+        <img src="previews/zentry.png" alt="Zentry" />
+        <div class="project-grid-overlay"></div>
+        <span class="project-status-badge done">Live</span>
+      </div>
+      <div class="project-grid-body">
+        <div class="project-eyebrow">
+          <span class="project-num-tag">02</span>
+        </div>
+        <div class="project-grid-title">Zentry</div>
+        <p class="project-grid-desc">
+          Modern gaming landing page — advanced UI animations, responsive layouts, and real video and image handling.
+        </p>
+        <div class="project-tags" style="margin-bottom: 1.2rem;">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Responsive</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ryan-4u/Zentry-Gaming-Website" target="_blank" class="link-btn">
+            GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://zentry-2022.netlify.app/" target="_blank" class="link-btn">
+            Live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-grid-card reveal reveal-delay-2">
+      <div class="project-grid-img">
+        <img src="previews/3d-landing.png" alt="3D Landing" />
+        <div class="project-grid-overlay"></div>
+        <span class="project-status-badge done">Live</span>
+      </div>
+      <div class="project-grid-body">
+        <div class="project-eyebrow">
+          <span class="project-num-tag">03</span>
+        </div>
+        <div class="project-grid-title">3D Landing Page</div>
+        <p class="project-grid-desc">
+          Interactive landing page with scroll-reveal animations and embedded Spline 3D elements for a modern immersive experience.
+        </p>
+        <div class="project-tags" style="margin-bottom: 1.2rem;">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">AOS</span>
+          <span class="project-tag">Spline</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ryan-4u/3D_elemen" target="_blank" class="link-btn">
+            GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://3d-element-page.netlify.app/" target="_blank" class="link-btn">
+            Live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore More card -->
+    <div class="project-explore-card reveal reveal-delay-3">
+      <div class="project-explore-inner">
+        <div class="project-explore-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="project-explore-text">More Projects</div>
+        <div class="project-explore-sub">View all work</div>
+        <a href="projects.html" class="btn-explore">
+          Explore All
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="5 12 19 12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label reveal">Get In Touch</div>
+  <h2 class="section-title reveal reveal-delay-1">Let's <em>Connect</em></h2>
+
+  <div class="contact-grid">
+
+    <!-- LEFT — Info -->
+    <div class="contact-info reveal">
+
+      <p class="contact-intro">
+        I'm open to full-time roles and internships at companies where I can ship real work from day one. If you have something worth building — let's talk.
+      </p>
+
+      <div class="contact-links">
+
+        <a href="mailto:aaryanofficial64@gmail.com" class="contact-link-row">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div class="contact-link-body">
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value">aaryanofficial64@gmail.com</div>
+          </div>
+          <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/aaryan-aggrawa/" target="_blank" class="contact-link-row">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-link-body">
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-value">aaryan-aggrawa</div>
+          </div>
+          <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <a href="https://github.com/ryan-4u" target="_blank" class="contact-link-row">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div class="contact-link-body">
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-value">ryan-4u</div>
+          </div>
+          <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+        <a href="https://leetcode.com/u/ryan-4u/" target="_blank" class="contact-link-row">
+          <div class="contact-link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.038-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.901-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039z"/></svg>
+          </div>
+          <div class="contact-link-body">
+            <div class="contact-link-label">LeetCode</div>
+            <div class="contact-link-value">ryan-4u</div>
+          </div>
+          <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT — Form -->
+    <div class="contact-form-wrap reveal reveal-delay-2">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdalrrga" method="POST">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" name="subject" placeholder="Internship opportunity / Collaboration / Just saying hi" required />
+        </div>
+
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Tell me what you're working on..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="formSubmit">
+          <span class="submit-text">Send Message</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Message sent. I'll get back to you soon.
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Aaryan</span>
+  <span>Built with precision.</span>
+</footer>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal" onclick="closeCert(event)">
+<div class="cert-modal-inner">
+    <button class="cert-modal-close" onclick="closeCert()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="cert-modal-title" id="certModalTitle"></div>
+    <img id="certModalImg" src="" alt="Certificate" />
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
