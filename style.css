@@ -1240,12 +1240,22 @@ section { position: relative; }
   .project-ghost-num { font-size: 8rem; }
 }
 @media (max-width: 600px) {
-  .projects-grid { grid-template-columns: 1fr; }
-  .project-explore-card { grid-column: auto; }
-  .project-banner-content { padding: 1.5rem; }
-  .project-banner-title { font-size: 1.8rem; }
-  .project-ghost-num { display: none; }
-  .project-grid-img { height: 160px; }
+  /* Banner — compact row like feat-card on mobile */
+  .project-banner              { height: auto; clip-path: none; }
+  .project-banner-bg           { position: relative; height: 200px; }
+  .project-banner-bg img       { height: 200px; object-fit: cover; filter: brightness(0.7); }
+  .project-banner-overlay      { display: none; }
+  .project-banner-content      { position: relative; padding: 1rem 1.2rem 1.4rem; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0.6rem; background: rgba(7,9,26,0.9); }
+  .project-banner-left         { width: 100%; }
+  .project-banner-title        { font-size: 1.3rem; margin-bottom: 0.3rem; }
+  .project-banner-desc         { font-size: 0.82rem; line-height: 1.6; margin-bottom: 0.6rem; }
+  .project-ghost-num           { display: none; }
+  .project-banner-right        { flex-direction: row; padding-bottom: 0; }
+
+  /* Grid */
+  .projects-grid               { grid-template-columns: 1fr; }
+  .project-grid-img            { height: 180px; }
+  .project-explore-card        { grid-column: auto; min-height: 90px; }
 }
 
 /* ===================== CONTACT ===================== */
