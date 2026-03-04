@@ -57,6 +57,8 @@ body:hover .cursor { opacity: 1; }
   .cursor, .cursor-ring { display: none !important; }
   body { cursor: auto; }
   a, button { cursor: pointer; }
+  .link-btn, .btn-explore, .cert-thumb, .contact-link-row,
+  .resume-btn, .form-submit, .hamburger { cursor: pointer; }
 }
 
 /* NOISE OVERLAY */
@@ -1499,6 +1501,8 @@ footer {
 
 @media (max-width: 600px) {
   .nav-links { display: none !important; }
+  .link-btn, .btn-explore, .cert-thumb, .contact-link-row,
+  .resume-btn, .form-submit, .hamburger { cursor: pointer !important; }
   .about-stats { grid-template-columns: 1fr 1fr; }
   .hero-ctas { flex-direction: column; }
   .btn-primary, .btn-secondary { text-align: center; justify-content: center; }
