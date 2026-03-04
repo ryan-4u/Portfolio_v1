@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-aaryan--portfolio-c9a84c?style=for-the-badge&logo=netlify&logoColor=black)](https://aaryan-portfolio-v1.netlify.app)
+[![Live Site](https://img.shields.io/badge/Live%20Site-aaryan--portfolio-c9a84c?style=for-the-badge&logo=netlify&logoColor=black)](https://aaryan-aggrawa-v1.netlify.app)
 [![GitHub](https://img.shields.io/badge/GitHub-ryan--4u-c9a84c?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ryan-4u)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan-c9a84c?style=for-the-badge&logo=linkedin&logoColor=black)](https://www.linkedin.com/in/aaryan-aggrawa/)
 
@@ -73,6 +73,6 @@ cd portfolio
 
 <div align="center">
 
-Built by [Aaryan](https://github.com/ryan-4u) &nbsp;|&nbsp; [Live Portfolio](https://aaryan-portfolio-v1.netlify.app)
+Built by [Aaryan](https://github.com/ryan-4u) &nbsp;|&nbsp; [Live Portfolio](https://aaryan-aggrawa-v1.netlify.app)
 
 </div>
